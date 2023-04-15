@@ -3,7 +3,7 @@ import React from 'react'
 import './globals.css'
 
 export const metadata = {
-  title: 'Spotify',
+  title: 'Spotify | Home',
   description: 'Listen to Spotify music',
 }
 
