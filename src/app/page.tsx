@@ -29,21 +29,21 @@ const Home = () => (
         <nav className="space-y-5 mt-10">
           <a
             href="http://localhost:3000"
-            className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
+            className="flex items-center gap-3 text-base font-semibold text-white"
           >
-            <HomeIcon />
+            <HomeIcon /> Home
           </a>
           <a
             href="http://localhost:3000"
             className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
           >
-            <Search />
+            <Search /> Search
           </a>
           <a
             href="http://localhost:3000"
             className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
           >
-            <Library />
+            <Library /> Library
           </a>
         </nav>
 
@@ -100,7 +100,7 @@ const Home = () => (
         <div className="grid grid-cols-3 gap-4 overflow-hidden mt-4 ">
           <a className="bg-white/5 rounded flex items-center gap-4 overflow-hidden hover:bg-white/5 transition-colors group">
             <Image src="/ac-dc.jpeg" width={104} height={104} alt="ac-dc" />
-            <strong>al</strong>
+            <strong>AC/DC</strong>
             <button
               type="button"
               className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible"
@@ -110,7 +110,7 @@ const Home = () => (
           </a>
           <a className="bg-white/5 rounded flex items-center gap-4 overflow-hidden hover:bg-white/5 transition-colors group">
             <Image src="/alok.jpg" width={104} height={104} alt="alok" />
-            <strong>al</strong>
+            <strong>Alok Radio</strong>
             <button
               type="button"
               className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible"
@@ -125,7 +125,7 @@ const Home = () => (
               height={104}
               alt="esquenta"
             />
-            <strong>al</strong>
+            <strong>Esquenta Sertanejo</strong>
             <button
               type="button"
               className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible"
@@ -140,7 +140,7 @@ const Home = () => (
               height={104}
               alt="metallica"
             />
-            <strong>al</strong>
+            <strong>The Best Songs of Metallica</strong>
             <button
               type="button"
               className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible"
@@ -155,7 +155,7 @@ const Home = () => (
               height={104}
               alt="murillo-huff"
             />
-            <strong>al</strong>
+            <strong>Ao Vivão 2</strong>
             <button
               type="button"
               className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible"
@@ -165,7 +165,7 @@ const Home = () => (
           </a>
           <a className="bg-white/5 rounded flex items-center gap-4 overflow-hidden hover:bg-white/5 transition-colors group">
             <Image src="/neffex.jpg" width={104} height={104} alt="neffex" />
-            <strong>al</strong>
+            <strong>Old Neffex Songs</strong>
             <button
               type="button"
               className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible"
@@ -178,6 +178,39 @@ const Home = () => (
           Made for Nathan Delanhese
         </h2>
         <div className="grid grid-cols-8 gap-4 mt-4">
+          <a className="bg-white/5 hover:bg-white/10 flex flex-col gap-2 p-3 group rounded-md">
+            <Image
+              src="/ac-dc.jpeg"
+              className="w-full"
+              width={120}
+              height={120}
+              alt="ac-dc"
+            />
+            <strong className="font-semibold">Highway to Hell</strong>
+            <span className="text-sm text-zinc-400">AC/DC</span>
+          </a>{' '}
+          <a className="bg-white/5 hover:bg-white/10 flex flex-col gap-2 p-3 group rounded-md">
+            <Image
+              src="/ac-dc.jpeg"
+              className="w-full"
+              width={120}
+              height={120}
+              alt="ac-dc"
+            />
+            <strong className="font-semibold">Highway to Hell</strong>
+            <span className="text-sm text-zinc-400">AC/DC</span>
+          </a>{' '}
+          <a className="bg-white/5 hover:bg-white/10 flex flex-col gap-2 p-3 group rounded-md">
+            <Image
+              src="/ac-dc.jpeg"
+              className="w-full"
+              width={120}
+              height={120}
+              alt="ac-dc"
+            />
+            <strong className="font-semibold">Highway to Hell</strong>
+            <span className="text-sm text-zinc-400">AC/DC</span>
+          </a>{' '}
           <a className="bg-white/5 hover:bg-white/10 flex flex-col gap-2 p-3 group rounded-md">
             <Image
               src="/ac-dc.jpeg"
@@ -237,16 +270,16 @@ const Home = () => (
         </div>
       </main>
     </div>
-    <footer className="bg-zinc-1040 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
+    <footer className="bg-zinc-900 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
       <div className="flex items-center gap-3">
         <Image
           src="/ac-dc.jpeg"
           className="w-full"
-          width={36}
-          height={36}
+          width={56}
+          height={56}
           alt="ac-dc"
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-1" style={{ whiteSpace: 'nowrap' }}>
           <strong className="font-normal">Highway to Hell</strong>
           <span className="text-xs text-zinc-400">AC/DC</span>
         </div>
